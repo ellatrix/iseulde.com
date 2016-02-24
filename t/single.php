@@ -17,7 +17,7 @@
 				esc_attr( get_the_date( 'c' ) ),
 				esc_html( get_the_date() )
 			);
-			echo $this->get( 'post_amp_content' );
+			echo str_replace( '&#13;', '', $this->get( 'post_amp_content' ) );
 		?></article><?php } ?>
 		<nav><a href="<?php echo esc_url( home_url( '/' ) ); ?>">index</a></nav>
 		<?php do_action( 'amp_post_template_footer', $this ); ?>
