@@ -4,9 +4,9 @@
 	font-style: normal;
 	font-stretch: normal;
 	src:
-		url( 'fonts/content-sans-regular.otf.woff2' ) format( 'woff2' ),
-		url( 'fonts/content-sans-regular.otf.woff' ) format( 'woff' ),
-		url( 'fonts/content-sans-regular.otf' ) format( 'opentype' );
+		url( '%stylesheet_directory_uri%/fonts/content-sans-regular.otf.woff2' ) format( 'woff2' ),
+		url( '%stylesheet_directory_uri%/fonts/content-sans-regular.otf.woff' ) format( 'woff' ),
+		url( '%stylesheet_directory_uri%/fonts/content-sans-regular.otf' ) format( 'opentype' );
 }
 
 @font-face{
@@ -15,35 +15,35 @@
 	font-style: normal;
 	font-stretch: normal;
 	src:
-		url( 'fonts/content-sans-bold.otf.woff2' ) format( 'woff2' ),
-		url( 'fonts/content-sans-bold.otf.woff' ) format( 'woff' ),
-		url( 'fonts/content-sans-bold.otf' ) format( 'opentype' );
+		url( '%stylesheet_directory_uri%/fonts/content-sans-bold.otf.woff2' ) format( 'woff2' ),
+		url( '%stylesheet_directory_uri%/fonts/content-sans-bold.otf.woff' ) format( 'woff' ),
+		url( '%stylesheet_directory_uri%/fonts/content-sans-bold.otf' ) format( 'opentype' );
 }
 
 @font-face {
 	font-family: 'content-serif';
 	font-style: normal;
 	font-weight: 400;
-	src: url( 'fonts/content-serif-regular.otf' ) format( 'opentype' );
+	src: url( '%stylesheet_directory_uri%/fonts/content-serif-regular.otf' ) format( 'opentype' );
 }
 
 @font-face {
 	font-family: 'content-serif';
 	font-style: italic;
 	font-weight: 400;
-	src: url( 'fonts/content-serif-italic.otf' ) format( 'opentype' );
+	src: url( '%stylesheet_directory_uri%/fonts/content-serif-italic.otf' ) format( 'opentype' );
 }
 
 @font-face {
 	font-family: 'content-serif';
 	font-style: normal;
 	font-weight: 700;
-	src: url( 'fonts/content-serif-bold.otf' ) format( 'opentype' );
+	src: url( '%stylesheet_directory_uri%/fonts/content-serif-bold.otf' ) format( 'opentype' );
 }
 
 @font-face {
 	font-family: 'content-serif';
 	font-style: italic;
 	font-weight: 700;
-	src: url( 'fonts/content-serif-bold-italic.otf' ) format( 'opentype' );
+	src: url( '%stylesheet_directory_uri%/fonts/content-serif-bold-italic.otf' ) format( 'opentype' );
 }
