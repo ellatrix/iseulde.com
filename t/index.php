@@ -13,10 +13,6 @@
 	<body>
 		<section>
 			<h1>Ella Iseulde Van Dorpe</h1>
-			<p>
-				<amp-img class="alignright" alt="Ella Iseulde Van Dorpe" src="https://iseulde.com/uploads/ella.jpg" width="200" height="200"></amp-img>
-				Hi, I’m Ella. I’m a WordPress Core Comitter and I work at <a href='https://www.siteground.com'>SiteGround</a>.
-      		</p>
 		</section>
 		<section id="notes">
 			<h2>Notes</h2>
