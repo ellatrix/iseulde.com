@@ -23,8 +23,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-moz-font-feature-settings: "liga" on;
-	color: rgba( 0, 0, 0, 0.8 );
-	font-size: 1.375em;
+	color: #474343;
+	font-size: 1.25em;
 	line-height: 1.3;
 	/*overflow-wrap: break-word;*/
 }

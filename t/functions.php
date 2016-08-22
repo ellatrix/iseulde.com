@@ -4,10 +4,6 @@ add_filter( 'stylesheet_uri', function() {
 	return get_stylesheet_directory_uri() . '/index.css?v=0.1.2';
 } );
 
-add_filter( 'amp_is_enabled', '__return_false' );
-
-add_action( 'template_redirect', 'amp_render' );
-
 add_filter( 'amp_post_template_metadata', function( $metadata ) {
 	if ( ! is_singular() ) {
 		return;
@@ -28,18 +24,6 @@ add_action( 'amp_post_template_head', function() {
 		sprintf( '<meta name="msapplication-TileImage" content="%s">', esc_url( get_site_icon_url( 270 ) ) )
 	);
 } );
-
-add_filter( 'amp_post_template_file', function ( $file, $type, $post ) {
-	if ( $type === 'style' ) {
-		return __DIR__ . '/style.php';
-	} else if ( is_404() ) {
-		return __DIR__ . '/404.php';
-	} else if ( is_singular() ) {
-		return __DIR__ . '/single.php';
-	}
-
-	return __DIR__ . '/index.php';
-}, 10, 3 );
 
 add_action( 'after_setup_theme', function() {
 	add_theme_support( 'title-tag' );
