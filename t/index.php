@@ -10,6 +10,7 @@
 		<style><?php
 			echo str_replace( '%stylesheet_directory_uri%', get_stylesheet_directory_uri(), file_get_contents( __DIR__ . '/index.css' ) );
 		?></style>
+		<?php wp_head(); ?>
 	</head>
 	<body>
 		<header>
@@ -35,5 +36,6 @@
 			<p><a href="https://twitter.com/ellaiseulde">Twitter</a>, <em>iseulde</em> on <a href="https://make.wordpress.org/chat/">Slack</a> or <em>ella</em> at this domain.</p>
 		</section>
 		<nav></nav>
+		<?php wp_footer(); ?>
 	</body>
 </html>
